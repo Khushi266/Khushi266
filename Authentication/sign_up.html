@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="sign_up.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="police_signup">
+            <form action="sign_up.php" method="post">
+                <h1>Create Police Account</h1>
+                <p>Use your number for registeration</p>
+                <input type="text" name="name" required="" placeholder="Enter your name..."/>
+                <input type="number" name="mobile_no" required="" placeholder="Enter your number..."/>
+                <input type="text" name="police_id" required="" placeholder="Enter your police id..."/>
+                <input type="text" name="password" required="" placeholder="Enter your password..."/>
+                <button type="submit" name="p_sign">Sign Up</button>
+            </form>
+        </div>
+        <div class="driver_signup">
+            <form action="sign_up.php" method="post">
+                <h1>Create Driver Account</h1>
+                <p>Use your number for registeration</p>
+                <input type="text" name="name" required="" placeholder="Enter your name..."/>
+                <input type="number" name="mobile_no" required="" placeholder="Enter your number..."/>
+                <input type="text" name="password" required="" placeholder="Enter your password..."/>
+                <button type="submit" name="d_sign">Sign Up</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <h1>Wellcome Back!</h1>
+                    <p>To keep connected with us create your drivers account.</p>
+                    <button id="btn_driver">Sign Up</button>
+                </div>
+                <div class="overlay-right">
+                    <h1>Wellcome Back!</h1>
+                    <p>To create your E-challans please create your account.</p>
+                    <button id="btn_police">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    const police_signup = document.getElementById('btn_police');
+    const driver_signup = document.getElementById('btn_driver');
+    const main = document.getElementById('main');
+
+    police_signup.addEventListener('click', ()=>{
+        main.classList.add("right-panel-active");
+    });
+    driver_signup.addEventListener('click', ()=>{
+        main.classList.remove("right-panel-active");
+    });
+</script>
+</html>

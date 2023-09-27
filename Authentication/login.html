@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="police_login">
+            <form action="login.php" method="post">
+                <h1>Login To Police Account</h1>
+                <p>Use your number for Login</p>
+                <input type="text" name="username" required="" placeholder="Enter your name..."/>
+                <input type="text" name="police_id" required="" placeholder="Enter your police id..."/>
+                <input type="text" name="password" required="" placeholder="Enter your password..."/>
+                <button type="submit" name="p_login">Login</button>
+            </form>
+        </div>
+        <div class="driver_login">
+            <form action="login.php" method="post">
+                <h1>Login To Driver Account</h1>
+                <p>Use your number for Login</p>
+                <input type="text" name="username" required="" placeholder="Enter your name..."/>
+                <input type="number" name="mobile_no" required="" placeholder="Enter your number..."/>
+                <input type="text" name="password" required="" placeholder="Enter your password..."/>
+                <button type="submit" name="d_login">Login</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <h1>Wellcome Back!</h1>
+                    <p>To check your E-challans login.</p>
+                    <button id="btn_driver">Login</button>
+                </div>
+                <div class="overlay-right">
+                    <h1>Wellcome Back!</h1>
+                    <p>To create your E-challans please into your account.</p>
+                    <button id="btn_police">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    const police_login = document.getElementById('btn_police');
+    const driver_login = document.getElementById('btn_driver');
+    const main = document.getElementById('main');
+
+    police_login.addEventListener('click', ()=>{
+        main.classList.add("right-panel-active");
+    });
+    driver_login.addEventListener('click', ()=>{
+        main.classList.remove("right-panel-active");
+    });
+</script>
+</html>
