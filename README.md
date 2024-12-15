@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Khushi Mahajan
 - 👀 I’m interested in Web development and Data Science.
-- 🌱 I’m currently pursuing my 3rd year in B.E computer at Savitribai Phule Pune University.
+- 🌱 I’m currently pursuing my 4th year in B.E computer at Savitribai Phule Pune University.
 - 📫 Reach me at khushimahajan266@gmail.com or
                               linkedin.com/in/khushi-mahajan-649588256
 
